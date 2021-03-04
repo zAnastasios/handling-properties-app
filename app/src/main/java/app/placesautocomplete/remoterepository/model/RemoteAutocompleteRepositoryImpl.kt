@@ -1,7 +1,7 @@
-package app.propertyad.remoterepository.model
+package app.placesautocomplete.remoterepository.model
 
-import app.propertyad.remoterepository.AutocompleteService
-import app.propertyad.remoterepository.RemoteAutocompleteRepository
+import app.placesautocomplete.remoterepository.AutocompleteService
+import app.placesautocomplete.remoterepository.RemoteAutocompleteRepository
 
 class RemoteAutocompleteRepositoryImpl(
     private val autocompleteService: AutocompleteService

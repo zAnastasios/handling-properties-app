@@ -1,4 +1,4 @@
-package app.propertyad.remoterepository.model
+package app.placesautocomplete.remoterepository.model
 
 import com.squareup.moshi.Json
 import com.squareup.moshi.JsonClass
