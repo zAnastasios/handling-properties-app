@@ -1,6 +1,8 @@
 plugins {
     id 'com.android.application'
     id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
 }
 
 android {
@@ -41,4 +43,25 @@ dependencies {
     testImplementation 'junit:junit:4.+'
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
+
+    //DI USING HILT DEPENDENCIES
+    implementation "com.google.dagger:hilt-android:$hilt_version"
+    kapt "com.google.dagger:hilt-android-compiler:$hilt_version"
+
+    //RETROFIT DEPENDENCY
+    implementation 'com.squareup.retrofit2:retrofit:2.9.0'
+
+    //Okhttp3 Dependency
+    implementation "com.squareup.okhttp3:okhttp:4.9.0"
+
+    //MOSHI JSON PARSER DEPENDENCIES
+    implementation "com.squareup.retrofit2:converter-moshi:2.7.1"
+
+    implementation "com.squareup.moshi:moshi-kotlin:1.11.0"
+    kapt "com.squareup.moshi:moshi-kotlin-codegen:1.11.0"
+    implementation "com.squareup.moshi:moshi-adapters:1.11.0"
+
+    //KOTLIN COROUTINES
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.4.1'
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-android:1.4.1'
 }
