@@ -1,6 +1,6 @@
-package app.propertyad.remoterepository
+package app.placesautocomplete.remoterepository
 
-import app.propertyad.remoterepository.model.AutocompleteResponse
+import app.placesautocomplete.remoterepository.model.AutocompleteResponse
 import retrofit2.http.GET
 import retrofit2.http.Query
 
