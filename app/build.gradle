@@ -57,6 +57,9 @@ dependencies {
     //Okhttp3 Dependency
     implementation "com.squareup.okhttp3:okhttp:4.9.0"
 
+    //Logging interceptor dependency
+    implementation "com.squareup.okhttp3:logging-interceptor:4.9.0"
+
     //MOSHI JSON PARSER DEPENDENCIES
     implementation "com.squareup.retrofit2:converter-moshi:2.7.1"
 
