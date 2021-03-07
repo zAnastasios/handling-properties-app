@@ -21,7 +21,7 @@ _Put an `x` in the boxes that apply._
 - [ ] I have added unit/integration tests that prove my fix is effective or that my feature works
 - [ ] I have added functional tests covering both happy and unhappy paths, according to the specifications of the fix or feature
 - [ ] I have commented my code, particularly in hard-to-understand areas
-- [ ] The commits messages format follows <a href="https://github.com/bluegroundltd/manifesto/blob/master/Git_Practices.md#write-a-great-commit-message">the manifesto</a> git commit message format
+- [ ] The commits messages format follows git best practises
 
 ## How is been tested?
 Please describe the tests that you ran to verify your changes. Please also list any relevant details for your test configuration, if any.
