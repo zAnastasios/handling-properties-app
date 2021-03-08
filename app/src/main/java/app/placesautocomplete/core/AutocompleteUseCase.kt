@@ -13,9 +13,9 @@ class AutocompleteUseCase @Inject constructor(
 
     suspend fun getPlaces(
         userInput: String
-    ): Result<AutocompleteResponse> =
+    ): Result<List<AutocompleteResponse>> =
         try {
-            val autocompleteResponse: AutocompleteResponse =
+            val autocompleteResponse: List<AutocompleteResponse> =
                 autocompleteRepository.getPlaces(
                     userInput = userInput
                 )
