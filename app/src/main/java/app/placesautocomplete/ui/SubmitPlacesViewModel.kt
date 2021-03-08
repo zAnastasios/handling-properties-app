@@ -23,10 +23,6 @@ class SubmitPlacesViewModel @ViewModelInject constructor(
     @IoDispatcher private val ioDispatcher: CoroutineDispatcher,
     private val autocompleteUseCase: AutocompleteUseCase
 ) : ViewModel() {
-    companion object {
-        private const val INPUT_LENGTH: Int = 2
-    }
-
 
     private val _getPlacesResponseState = MutableLiveData<GetPlacesResponseState>()
     val getPlacesResponseState: LiveData<GetPlacesResponseState> = _getPlacesResponseState
@@ -69,7 +65,6 @@ class SubmitPlacesViewModel @ViewModelInject constructor(
     }
 
     private fun onGetPlacesFailure(placesResult: Failure) {
-
         when (placesResult.error) {
             is IOException -> {
                 _getPlacesResponseState.postValue(
