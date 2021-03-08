@@ -8,5 +8,5 @@ interface AutocompleteService {
     @GET("autocomplete")
     suspend fun getPlaces(
         @Query("input") userInput: String
-    ): AutocompleteResponse
+    ): List<AutocompleteResponse>
 }
