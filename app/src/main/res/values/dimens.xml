@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- GLOBAL SPACINGS -->
+    <dimen name="global_spacing_1">1dp</dimen>
+    <dimen name="global_spacing_2">2dp</dimen>
+    <dimen name="global_spacing_4">4dp</dimen>
+    <dimen name="global_spacing_5">5dp</dimen>
+    <dimen name="global_spacing_6">6dp</dimen>
+    <dimen name="global_spacing_8">8dp</dimen>
+    <dimen name="global_spacing_10">10dp</dimen>
+    <dimen name="global_spacing_12">12dp</dimen>
+    <dimen name="global_spacing_15">15dp</dimen>
+    <dimen name="global_spacing_16">16dp</dimen>
+    <dimen name="global_spacing_18">18dp</dimen>
+    <dimen name="global_spacing_20">20dp</dimen>
+    <dimen name="global_spacing_24">24dp</dimen>
+    <dimen name="global_spacing_28">28dp</dimen>
+    <dimen name="global_spacing_32">32dp</dimen>
+    <dimen name="global_spacing_36">36dp</dimen>
+    <dimen name="global_spacing_40">40dp</dimen>
+    <dimen name="global_spacing_44">44dp</dimen>
+    <dimen name="global_spacing_46">46dp</dimen>
+    <dimen name="global_spacing_48">48dp</dimen>
+    <dimen name="global_spacing_52">52dp</dimen>
+    <dimen name="global_spacing_56">56dp</dimen>
+    <dimen name="global_spacing_64">64dp</dimen>
+    <dimen name="global_spacing_68">68dp</dimen>
+    <dimen name="global_spacing_70">70dp</dimen>
+    <dimen name="global_spacing_72">72dp</dimen>
+    <dimen name="global_spacing_80">80dp</dimen>
+    <dimen name="global_spacing_92">92dp</dimen>
+    <dimen name="global_spacing_100">100dp</dimen>
+    <dimen name="global_spacing_110">110dp</dimen>
+    <dimen name="global_spacing_112">112dp</dimen>
+    <dimen name="global_spacing_156">156dp</dimen>
+    <dimen name="global_spacing_200">200dp</dimen>
+
+    <!-- GLOBAL ELEVATIONS -->
+    <dimen name="global_elevation_1">1dp</dimen>
+    <dimen name="global_elevation_2">2dp</dimen>
+    <dimen name="global_elevation_4">4dp</dimen>
+    <dimen name="global_elevation_6">6dp</dimen>
+    <dimen name="global_elevation_8">8dp</dimen>
+    <dimen name="global_elevation_12">12dp</dimen>
+    <dimen name="global_elevation_16">16dp</dimen>
+    <dimen name="global_elevation_24">24dp</dimen>
+
+    <!-- APP TEXT SIZES -->
+    <dimen name="heading_1">40sp</dimen>
+    <dimen name="heading_2">32sp</dimen>
+    <dimen name="heading_3">28sp</dimen>
+    <dimen name="heading_4">24sp</dimen>
+    <dimen name="heading_5">20sp</dimen>
+    <dimen name="body">18sp</dimen>
+    <dimen name="body_16">16sp</dimen>
+    <dimen name="body_14">14sp</dimen>
+
+</resources>
