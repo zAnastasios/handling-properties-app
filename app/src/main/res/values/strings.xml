@@ -1,3 +1,19 @@
 <resources>
     <string name="app_name">Property Handling</string>
+
+    <string name="title_en">Title</string>
+    <string name="title_hint_en">My awesome property</string>
+    <string name="location_en">Location</string>
+    <string name="location_hint_en">Nafpaktos</string>
+    <string name="price_en">Price</string>
+    <string name="price_hint_en">450</string>
+    <string name="description_en">Description</string>
+    <string name="description_hint_en">This property is located in the old city of Nafpaktos. Family friendly neighborhood!</string>
+    <string name="submit_en">Submit</string>
+    <string name="clear_en">Clear</string>
+    <string name="no_location_found_en">No location found</string>
+    <string name="no_internet_connection_en">Please check your internet status.</string>
+    <string name="server_down_error_en">Our services are unavailable right now.</string>
+    <string name="unknown_error_en">Something went wrong. Please try again.</string>
+    <string name="helper_text_required_field_en">* Required</string>
 </resources>
