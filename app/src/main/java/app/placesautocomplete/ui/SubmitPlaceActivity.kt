@@ -9,6 +9,7 @@ import android.view.inputmethod.InputMethodManager
 import android.widget.ArrayAdapter
 import android.widget.EditText
 import androidx.activity.viewModels
+import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.widget.addTextChangedListener
 import app.devchallenge.propertyhandling.R
@@ -18,6 +19,7 @@ import app.placesautocomplete.ui.model.GetPlacesResponseState
 import app.placesautocomplete.ui.model.Places
 import com.google.android.material.snackbar.Snackbar
 import dagger.hilt.android.AndroidEntryPoint
+import org.json.JSONObject
 
 @AndroidEntryPoint
 class SubmitPlaceActivity : AppCompatActivity() {
@@ -44,6 +46,56 @@ class SubmitPlaceActivity : AppCompatActivity() {
         binding.clearButton.setOnClickListener {
             clearAllFields()
         }
+        binding.submitButton.setOnClickListener {
+            checkIfPlaceIsValid()
+        }
+    }
+
+    private fun checkIfPlaceIsValid() {
+        if (binding.submitPlaceTitleTextInputEditText.text.toString().isEmpty()) {
+            binding.submitPlaceTitleTextInputLayout.error =
+                getString(R.string.error_field_is_required)
+            return
+        }
+        if (
+            binding.placesAutocompleteTextView.text.toString().isEmpty() ||
+            binding.placesAutocompleteTextView.text.toString() == getString
+                (
+                R.string.no_location_found_en
+            )
+        ) {
+            binding.placesDropdownTextInputLayout.error =
+                getString(R.string.error_field_is_required)
+            return
+        }
+        submitPlace(
+            title = binding.submitPlaceTitleTextInputEditText.text.toString(),
+            location = binding.placesAutocompleteTextView.text.toString(),
+            price = binding.submitPlacePriceTextInputEditText.text.toString(),
+            description = binding.submitPlaceDescriptionTextInputEditText.text.toString(),
+        )
+    }
+
+    private fun submitPlace(
+        title: String,
+        location: String,
+        price: String,
+        description: String
+    ) {
+        val rootObject = JSONObject()
+        rootObject.put("title", title)
+        rootObject.put("location", location)
+        rootObject.put("price", price)
+        rootObject.put("description", description)
+        AlertDialog.Builder(this)
+            .setTitle("Final listing")
+            .setMessage(rootObject.toString())
+            .setPositiveButton(
+                android.R.string.ok,
+                null //Instead of adding null listener in order ot dismiss, we could add saving locally functionality through the ViewModel
+            )
+            .setNegativeButton(android.R.string.cancel, null)
+            .show()
     }
 
     private fun clearAllFields() {
