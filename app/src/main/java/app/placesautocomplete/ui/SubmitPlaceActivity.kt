@@ -41,7 +41,17 @@ class SubmitPlaceActivity : AppCompatActivity() {
                 collectUserInput(userInput = it)
             }
         )
+        binding.clearButton.setOnClickListener {
+            clearAllFields()
+        }
+    }
 
+    private fun clearAllFields() {
+        binding.submitPlaceTitleTextInputEditText.setText("")
+        binding.placesAutocompleteTextView.setText("")
+        initAutocompleteAdapter(emptyList())
+        binding.submitPlacePriceTextInputEditText.setText("")
+        binding.submitPlaceDescriptionTextInputEditText.setText("")
     }
 
     private fun initListeners() {
