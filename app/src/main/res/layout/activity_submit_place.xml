@@ -122,6 +122,7 @@
             android:id="@+id/submit_place_price_textInputEditText"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:inputType="number"
             android:hint="@string/price_hint_en"
             app:hintTextColor="@color/black" />
 
@@ -166,7 +167,7 @@
 
 
     <Button
-        android:id="@+id/button2"
+        android:id="@+id/clear_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/global_spacing_16"
@@ -176,13 +177,13 @@
         android:textColor="@color/white"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintCircleRadius="4dp"
-        app:layout_constraintEnd_toStartOf="@+id/button"
+        app:layout_constraintEnd_toStartOf="@+id/submit_button"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent" />
 
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/submit_button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginBottom="@dimen/global_spacing_16"
@@ -194,6 +195,6 @@
         app:layout_constraintCircleRadius="4dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
-        app:layout_constraintStart_toEndOf="@+id/button2" />
+        app:layout_constraintStart_toEndOf="@+id/clear_button" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
